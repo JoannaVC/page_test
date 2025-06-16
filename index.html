@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Caveat&family=Quicksand:wght@400;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de tareas</title>
+</head>
+<body id="texture-overlay" class="min-h-screen font-[Quicksand]">
+    <div class="flex flex-col items-center gap-12">
+
+        <div class="relative inline-block">
+            <h1 class="text-[64px] font-[Bungee_Hairline] text-[#1B2D18] ">TO-DO</h1>
+            <h2 id="shadow" class="text-[48px] font-[Caveat] absolute bottom-0 right-0 translate-x-4 text-[#244520]">list</h2>
+        </div>
+
+        <form id="todoForm" class="flex basis-16 gap-6">
+            <input id="tarea" type="text" placeholder="¿Qué harás hoy?" class="text-[22px] bg-white focus:outline-none rounded-full shadow-lg w-72 px-6">
+            <button class="text-[22px] hover:bg-stone-200 bg-white rounded-full shadow-lg w-48 text-[#244520]">Agregar</button>
+        </form>
+
+        <div class="bg-white/20 backdrop-blur rounded-3xl shadow-lg w-126 p-6">
+            <ul id="listaTareas" class="text-[24px] font-medium space-y-4">
+                <!--<li class="bg-white rounded-full h-12 px-6 flex items-center">Tarea 1</li>-->
+ 
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
