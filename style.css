@@ -1,0 +1,9 @@
+#shadow {
+    text-shadow: 2px 2px 0 white;
+}
+
+#texture-overlay {
+    background-image: url('Noise & Texture.png'), linear-gradient(to top, #C2DBBF 42%, #C9E2DF);
+    background-size:100%;
+    background-blend-mode: overlay;
+}
